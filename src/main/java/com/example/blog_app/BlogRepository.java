@@ -25,7 +25,7 @@ public class BlogRepository {
     }
 
 
-    // 2. コントローラーから呼び出される全件取得メソッド（findAll）
+    
     public List<Blog> findAll() {
         return jdbcClient.sql("SELECT id, title, text, auther FROM Blogs.blog")
                 .query(Blog.class)
@@ -33,7 +33,7 @@ public class BlogRepository {
     }
 
 
-    // 3. 記事詳細表示用（searchById）
+    
     public Optional<Blog> searchById(int id) {
        return jdbcClient.sql("SELECT id,title,text,auther FROM Blogs.blog WHERE id = :id")
                 .param("id", id)

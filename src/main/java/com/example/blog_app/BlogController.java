@@ -66,8 +66,7 @@ public class BlogController {
 
     
 
-@PostMapping("/post")
-public String createBlog(
+        @PostMapping("/post")public String createBlog(
         @RequestParam("title") String title,
         @RequestParam("text") String text,
         @RequestParam("auther") String auther,
