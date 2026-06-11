@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>新規投稿</title>
+  <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+    <main>
+        <br><li><a href="/">ホーム</a></li></br>
+        <li><a href="/post">新規投稿</a></li>
+    </main>
+
+  <h1>新規投稿</h1>
+
+    
+
+    <form th:action="@{/post}" method="post">
+        <input type="text" placeholder="タイトル" class="title" name="title" required><br><br>
+        
+        <input type="text" placeholder="著者" class="title" name="auther" required><br><br>
+        
+        <div>
+            <textarea id="message" placeholder="本文" name="text" required></textarea>
+        </div>
+        <br>
+        <button type="submit" class="btn">投稿</button>
+    </form>
+
+
+    
+
+  
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>詳細</title>
+</head>
+<body>
+
+<h1>詳細</h1>
+
+<div>
+    <h1 th:text="${blog.title}">タイトル</h1>
+    <p th:text="${blog.text}">本文</p>
+    <p th:text="${blog.auther}">著者</p>
+</div>
+
+<main>
+        <br><li><a href="/">ホーム</a></li></br>
+        <li><a href="/post">新規投稿</a></li>
+</main>
+
+</body>
+</html>
