@@ -1,4 +1,4 @@
-body {
+h1 {
     font-family: sans-serif;
     color: #0920f3;
     margin: 0;
@@ -10,10 +10,7 @@ body {
     padding: 24px;
 }
 
-h1 {
-    font-size: 1.4rem;
-    margin-bottom: 16px;
-}
+
 
 
 
