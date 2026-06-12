@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>新規投稿</title>
-  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" th:href="@{/stylee.css}">
 </head>
 <body>
-
-    <main>
-        <br><li><a href="/">ホーム</a></li></br>
-        <li><a href="/post">新規投稿</a></li>
-    </main>
+    <div th:replace="~{fragment/title :: header}"></div>
+    
 
   <h1>新規投稿</h1>
 
